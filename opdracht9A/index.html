@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Opdracht9A</title>
+</head>
+
+<body>
+  <h1>Opdracht9A</h1>
+
+  <h3>Burhan Topaloglu</h3>
+  <script>
+
+    let input = [11,12,13,45,15,16];
+    let food = ["Pizza", "Sushi", "Chicken", "Ceasar Salad"]
+    let numbersandletters = ["hello", 7, "twenty", 9, "sixty", 9, "nine"]
+    input.push(21)
+    input.push(4)
+    input.push(34)
+    console.log(input)
+    if (input == 1)
+    {
+      input.push(1)
+    }
+    var input_user = prompt("Please input a string to put into the array " + input, "delete this text and type here!");
+
+    if (input_user != null)
+    {
+      input.push(input_user)
+    }
+    for(var i=0;i<input.length;i++)
+    {
+      document.write("<b>input "+i+" is <\/b> " +input[i]+"<br>");
+    }
+    for(var i=0;i<food.length;i++)
+    {
+      document.write("<b>food "+i+" is <\/b> " +food[i]+"<br>");
+    }
+
+  </script>
+
+  <div>
+    <a href="http://validator.w3.org/check?uri=referer" target="_blank"><img src=
+    "http://blog.boyet.com/blog/files/media/image/valid-html5-blue.png" alt=
+    "Valide HTML5" /></a> <a href="http://jigsaw.w3.org/css-validator/check/referer"
+    target="_blank"><img src="http://jigsaw.w3.org/css-validator/images/vcss-blue.gif"
+    alt="Valide CSS" /></a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>6b burhan</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+  </head>
+  <body>
+  <h1 id = "afbeelding">nya</h1>
+  <h2 id = "onderwerp"> onderwerp: anime </h2>
+  <input type="button" value="1" id="button_1" />
+  <input type="button" value="2" id="button_2" />
+  <input type="button" value="3" id="button_3" />
+  <input type="button" value="4" id="button_4" />
+  <input type="button" value="5" id="button_5" />
+
+  <input type="button" value="Wissel achtergrond" id="button_6" />
+  <br>
+  <img src="img/nya.gif" id="img1" alt="nya">
+
+  <script>
+
+  var button_1 = document.getElementById("button_1")
+  var button_2 = document.getElementById("button_2")
+  var button_3 = document.getElementById("button_3")
+  var button_4 = document.getElementById("button_4")
+  var button_5 = document.getElementById("button_5")
+
+  var button_6 = document.getElementById("button_6")
+
+  var plaatje = document.getElementById("img1")
+  var kop = document.getElementById('kop')
+  var achtergrond = 1;
+
+  button_1.addEventListener('click', () => {
+    plaatje.src = "img/nya.gif";
+    afbeelding.innerText = "nya";
+    afbeelding.style.color = "#000000";
+  })
+  button_2.addEventListener('click', () => {
+    plaatje.src = "img/bleh.gif"
+    afbeelding.innerText = "bleh";
+    afbeelding.style.color = "#000000";
+  })
+  button_3.addEventListener('click', () => {
+    plaatje.src = "img/rikka.gif";
+    afbeelding.innerText = "rikka";
+    afbeelding.style.color = "#000000";
+  })
+  button_4.addEventListener('click', () => {
+    plaatje.src = "img/oceanman.png";
+    afbeelding.innerText = "ocean man";
+    afbeelding.style.color = "#000000";
+  })
+  button_5.addEventListener('click', () => {
+    plaatje.src = "img/DIO.jpg";
+    afbeelding.innerText = "DIO";
+    afbeelding.style.color = "#000000";
+  })
+  button_6.addEventListener('click', () => {
+
+    if (achtergrond == 1) {
+      document.body.style.backgroundImage = "url('img/bleh.gif')";
+      afbeelding.style.color = "#ff0000";
+      afbeelding.innerText = "achtergrond= bleh";
+      onderwerp.style.color = "#000000";
+      //achtergrond = 2;
+    }
+    if (achtergrond == 2) {
+      document.body.style.backgroundImage = "url('img/rikka.gif')";
+      afbeelding.style.color = "#0000ff";
+      afbeelding.innerText = "achtergrond= rikka";
+      onderwerp.style.color = "#000000";
+    //  achtergrond = 3;
+    }
+     if (achtergrond == 3) {
+      document.body.style.backgroundImage = "url('img/oceanman.png')";
+      afbeelding.style.color = "#00ffff";
+      afbeelding.innerText = "achtergrond= ocean man";
+      onderwerp.style.color = "#00ffff";
+
+      //achtergrond = 0;
+    }
+    if (achtergrond>=3){achtergrond = 0}
+achtergrond += 1;
+  })
+  </script>
+
+  <footer>
+
+    <div id="validatie">
+      <a href="http://validator.w3.org/check?uri=referer" target="_blank">
+        <img src="http://blog.boyet.com/blog/files/media/image/valid-html5-blue.png" alt="Valide HTML5"></a>
+      <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+        <img src="http://jigsaw.w3.org/css-validator/images/vcss-blue.gif" alt="Valide CSS">
+      </a>
+    </div>
+  </footer>
+
+  </body>
+</html>

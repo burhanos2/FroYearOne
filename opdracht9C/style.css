@@ -1,0 +1,35 @@
+body{
+  background-color: purple;
+}
+
+#myImage{
+  display: block;
+  margin: auto;
+  background-color: orange;
+  padding: 20px;
+  border: 4px grey dotted;
+  border-radius: 20px;
+}
+
+.wrapper{
+  width: 700px;
+  margin:auto;
+}
+
+#thumbnailHolder{
+  margin-top: 20px;
+  white-space: nowrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.thumb{
+  padding: 10px;
+  height: 70px;
+  background-color: white;
+}
+
+.thumb:hover{
+  background-color: black;
+  border-radius: 5px;
+}

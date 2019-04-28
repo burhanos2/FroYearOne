@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+        <meta charset="utf-8">
+    <title>Burhan is timelord</title>
+    </head>
+
+    <body>
+
+      <h1>Java Script</h1>
+    <h2>Dit is tijd in javascript </h2>
+      <script>
+          var today = new Date();
+          var dd = today.getDate();
+          var mm = today.getMonth()+1;
+          var yyyy = today.getFullYear();
+          var text = "Datum: ";
+
+          if(dd<10) {
+          dd = '0'+dd
+          }
+
+          if(mm<10) {
+          mm = '0'+mm
+          }
+
+          today = text + dd + '/' + mm + '/' + yyyy;
+          document.write(today);
+
+          document.write("<br>");
+
+          function functionName() {
+
+          }
+
+          var time = new Date();
+          var hour = time.getHours();
+          var min = time.getMinutes();
+          var sec = time.getSeconds();
+          var text2 = "De tijd van vandaag is: ";
+
+          if(hour<10) {
+            hour = '0'+hour
+          }
+
+          if(min<10) {
+            min = '0'+min
+          }
+
+          if(sec<10) {
+            sec = '0'+sec
+          }
+
+          time = text2 + hour + ':' + min + ':' + sec;
+          document.write(time);
+
+      </script>
+
+      <footer>
+      <div id="validatie">
+      <a href="http://validator.w3.org/check?uri=referer" target="_blank">
+          <img src="http://blog.boyet.com/blog/files/media/image/valid-html5-blue.png" alt="Valide HTML5"></a>
+      </div>
+      </footer>
+      
+    </body>
+  </html>

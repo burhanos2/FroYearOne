@@ -1,0 +1,15 @@
+html { background: url(../media/youregay.jpg);}
+
+@font-face {
+    font-family: 'sans';
+    src:
+    url('http://24742.hosts.ma-cloud.nl/bewijzenmap/periode1.2/fro/opdracht9D/css/fonts/sans.ttf'),
+    url('http://24742.hosts.ma-cloud.nl/bewijzenmap/periode1.2/fro/opdracht9D/css/fonts/sans.svg'),
+    url('http://24742.hosts.ma-cloud.nl/bewijzenmap/periode1.2/fro/opdracht9D/css/fonts/sans.eot');
+}
+
+p {
+   display: inline-block; center;
+   font-size: 1715%;
+   font-family: "sans", cursive, sans-serif;
+    }

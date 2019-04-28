@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Opdracht9B</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h2>Burhan's word randomizer</h2>
+    <p id="latenzien1"></p>
+
+    <p id="latenzien2"></p>
+
+    <p id="latenzien3"></p>
+  <br />
+  <br />
+    <img id="button" src="images/button.png" alt="knop" width="720" height="480" />
+  <script>
+      let naamWoorden = [
+          "Guys", "Girls", "People", "Apes", "Dutch people"
+      ];
+
+      let werkWoorden = [
+          "are evolving into", "are kicking", "are kissing", "are responsible for", "are pretending to be"
+      ];
+
+      let naamWoorden2 = [
+          "Nazi's.", "forests.", "fruit.", "ants.", "vegetables."
+      ];
+      function latenzien()
+      {
+          document.getElementById('latenzien1').innerHTML = opdracht(naamWoorden);
+          document.getElementById('latenzien2').innerHTML = opdracht(werkWoorden);
+          document.getElementById('latenzien3').innerHTML = opdracht(naamWoorden2);
+      }
+
+      function opdracht(normwoorden)
+      {
+          let normWoorden = normwoorden;
+          console.log(normWoorden);
+          let lengte = normWoorden.length;
+          console.log(lengte + "\n");
+          let randomNummer = Math.random();
+          randomNummer = Math.floor(randomNummer * lengte);
+          console.log(normWoorden[randomNummer]);
+          return normWoorden[randomNummer];
+      }
+
+      var button = document.getElementById("button");
+      button.addEventListener("click", latenzien);
+
+
+  </script>
+
+    <div>
+      <a href="http://validator.w3.org/check?uri=referer" target="_blank"><img src=
+      "http://blog.boyet.com/blog/files/media/image/valid-html5-blue.png" alt=
+      "Valide HTML5" /></a> <a href="http://jigsaw.w3.org/css-validator/check/referer"
+      target="_blank"><img src="http://jigsaw.w3.org/css-validator/images/vcss-blue.gif"
+      alt="Valide CSS" /></a>
+    </div>
+</body>
+</html>
